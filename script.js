@@ -15,7 +15,11 @@ let button = document.querySelector('.arrow-next')
 button.addEventListener('click', scrollDown)
 
 // Код, який потрібно виправити
-
+let item_name_objects = document.querySelectorAll('.merch-item-name')
+let item_names = ['Тарілка', 'Кружка', 'Ракета', 'Марсохід']
+for (let i = 0; i < item_names.length; i += 1) {
+    item_name_objects[i].innerHTML = item_names[i]
+}
 
 let item_descriptions = ['Тарілка з принтом Марса. Доступна в червоному та білому кольорах', 'Кружка з принтом Марса. Доступна в червоному та білому кольорах',                       'Масштабна модель однієї з ракет Galaxy', 'Масштабна модель марсохода (ми купуємо їх у NASA)']
 let item_prices = [1000, 1000, 2500, 5000]
